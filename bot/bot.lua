@@ -85,29 +85,28 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
 	config = {
     enabled_plugins = {
-    "BanHammer",
-    "Fun",	
+    "BanHammer",	
     "GroupManager",
     "Msg-Checks",	
     "Plugins",
     "Tools",
     "Write"
 	},
-    sudo_users = {377450049},
+    sudo_users = {244200491},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[⚜ *MaTaDoR BoT v5.4*
+    info_text = [[⚜ *king and queen BoT*
 
-🌐 https://github.com/MrMahDiRoO/MaTaDoR
+🌐 https://erfan.com
 
 🔖 *Admins :*
-》@MahDiRoO ➣ _Founder & Developer《_
+》@Erfaan051 ➣ _Founder & Developer《_
 
-》@ToOfan《
+》@Erfaan051《
 
 📜 *Our channel :*
-》@MaTaDoRTeaM《]],
+》@Erfaan051《]],
   }
 	serialize_to_file(config, './data/config.lua')
 	print ('saved config into conf.lua')
