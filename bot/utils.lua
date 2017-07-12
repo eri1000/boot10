@@ -494,6 +494,19 @@ end
 return var
 end
 
+function is_whitelist(user_id, chat_id)
+  local var = false
+  local data = load_data(_config.moderation.data)
+  if data[tostring(chat_id)] then
+    if data[tostring(chat_id)]['whitelist'] then
+      if data[tostring(chat_id)]['whitelist'][tostring(user_id)] then
+        var = true
+      end
+    end
+  end
+return var
+end
+
 function is_gbanned(user_id)
   local var = false
   local data = load_data(_config.moderation.data)
@@ -510,8 +523,8 @@ end
 function is_filter(msg, text)
 local var = false
 local data = load_data(_config.moderation.data)
-  if data[tostring(msg.to.id)]['filterlist'] then
-for k,v in pairs(data[tostring(msg.to.id)]['filterlist']) do 
+  if data[tostring(msg.chat_id_)]['filterlist'] then
+for k,v in pairs(data[tostring(msg.chat_id_)]['filterlist']) do 
     if string.find(string.lower(text), string.lower(k)) then
        var = true
         end
@@ -532,6 +545,22 @@ local msgid = {[0] = message_ids}
   tdcli.deleteMessages(chat_id, msgid, dl_cb, nil)
 end
 
+function channel_unblock(chat_id, user_id)
+   tdcli.changeChatMemberStatus(chat_id, user_id, 'Left', dl_cb, nil)
+end
+
+ function channel_set_admin(chat_id, user_id)
+   tdcli.changeChatMemberStatus(chat_id, user_id, 'Editor', dl_cb, nil)
+end
+
+ function channel_set_mod(chat_id, user_id)
+   tdcli.changeChatMemberStatus(chat_id, user_id, 'Moderator', dl_cb, nil)
+end
+
+ function channel_demote(chat_id, user_id)
+   tdcli.changeChatMemberStatus(chat_id, user_id, 'Member', dl_cb, nil)
+end
+
 function file_dl(file_id)
 	tdcli.downloadFile(file_id, dl_cb, nil)
 end
@@ -541,7 +570,7 @@ local hash = "gp_lang:"..chat_id
 local lang = redis:get(hash)
     local data = load_data(_config.moderation.data)
     local i = 1
-  if not data[tostring(msg.chat_id_)] then
+  if not data[tostring(chat_id)] then
   if not lang then
     return '_Group is not added_'
 else
@@ -562,7 +591,7 @@ else
    message = '_لیست کاربران محروم شده از گروه :_\n'
      end
   for k,v in pairs(data[tostring(chat_id)]['banned']) do
-    message = message ..i.. '- '..check_markdown(v)..' [' ..k.. '] \n'
+    message = message ..i.. '- '..v..' [' ..k.. '] \n'
    i = i + 1
 end
   return message
@@ -573,7 +602,7 @@ local hash = "gp_lang:"..chat_id
 local lang = redis:get(hash)
     local data = load_data(_config.moderation.data)
     local i = 1
-  if not data[tostring(msg.chat_id_)] then
+  if not data[tostring(chat_id)] then
   if not lang then
     return '_Group is not added_'
 else
@@ -594,7 +623,43 @@ else
    message = '_لیست کاربران سایلنت شده :_\n'
     end
   for k,v in pairs(data[tostring(chat_id)]['is_silent_users']) do
-    message = message ..i.. '- '..check_markdown(v)..' [' ..k.. '] \n'
+    message = message ..i.. '- '..v..' [' ..k.. '] \n'
+   i = i + 1
+end
+  return message
+end
+
+function whitelist(chat_id)
+local hash = "gp_lang:"..chat_id
+local lang = redis:get(hash)
+    local data = load_data(_config.moderation.data)
+    local i = 1
+  if not data[tostring(chat_id)] then
+  if not lang then
+    return '_Group is not added_'
+else
+    return 'گروه به لیست گروه های مدیریتی ربات اضافه نشده است'
+   end
+  end
+  if not data[tostring(chat_id)]['whitelist'] then
+    data[tostring(chat_id)]['whitelist'] = {}
+    save_data(_config.moderation.data, data)
+    end
+  -- determine if table is empty
+  if next(data[tostring(chat_id)]['whitelist']) == nil then --fix way
+     if not lang then
+					return "_No_ *users* _in white list_"
+   else
+					return "*هیچ کاربری در لیست سفید وجود ندارد*"
+              end
+				end
+       if not lang then
+   message = '*Users of white list :*\n'
+         else
+   message = '_کاربران لیست سفید :_\n'
+     end
+  for k,v in pairs(data[tostring(chat_id)]['whitelist']) do
+    message = message ..i.. '- '..v..' [' ..k.. '] \n'
    i = i + 1
 end
   return message
@@ -622,7 +687,7 @@ local lang = redis:get(hash)
    message = '_لیست کاربران محروم شده از گروه های ربات :_\n'
    end
   for k,v in pairs(data['gban_users']) do
-    message = message ..i.. '- '..check_markdown(v)..' [' ..k.. '] \n'
+    message = message ..i.. '- '..v..' [' ..k.. '] \n'
    i = i + 1
 end
   return message
