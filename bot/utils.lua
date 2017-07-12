@@ -1,3 +1,4 @@
+--Begin Utils.lua By #BeyondTeam :)
 function serialize_to_file(data, file, uglify)
   file = io.open(file, 'w+')
   local serialized
@@ -257,7 +258,7 @@ end
 function check_markdown(text) --markdown escape ( when you need to escape markdown , use it like : check_markdown('your text')
 		str = text
 		if str:match('_') then
-			output = str:gsub('_','\\_')
+			output = str:gsub('_',[[\_]])
 		elseif str:match('*') then
 			output = str:gsub('*','\\*')
 		elseif str:match('`') then
@@ -493,27 +494,6 @@ end
 return var
 end
 
-function is_whitelist(user_id, chat_id)
-  local var = false
-  local data = load_data(_config.moderation.data)
-  if data[tostring(chat_id)] then
-    if data[tostring(chat_id)]['whitelist'] then
-      if data[tostring(chat_id)]['whitelist'][tostring(user_id)] then
-        var = true
-      end
-    end
-  end
-return var
-end
-
- function channel_set_admin(chat_id, user_id)
-   tdcli.changeChatMemberStatus(chat_id, user_id, 'Editor', dl_cb, nil)
-end
-
- function channel_demote(chat_id, user_id)
-   tdcli.changeChatMemberStatus(chat_id, user_id, 'Member', dl_cb, nil)
-end
-
 function is_gbanned(user_id)
   local var = false
   local data = load_data(_config.moderation.data)
@@ -620,6 +600,34 @@ end
   return message
 end
 
+ function gbanned_list(msg)
+local hash = "gp_lang:"..msg.chat_id_
+local lang = redis:get(hash)
+    local data = load_data(_config.moderation.data)
+    local i = 1
+  if not data['gban_users'] then
+    data['gban_users'] = {}
+    save_data(_config.moderation.data, data)
+  end
+  if next(data['gban_users']) == nil then --fix way
+    if not lang then
+					return "_No_ *globally banned* _users available_"
+   else
+					return "*هیچ کاربری از گروه های ربات محروم نشده*"
+             end
+				end
+        if not lang then
+   message = '*List of globally banned users :*\n'
+   else
+   message = '_لیست کاربران محروم شده از گروه های ربات :_\n'
+   end
+  for k,v in pairs(data['gban_users']) do
+    message = message ..i.. '- '..check_markdown(v)..' [' ..k.. '] \n'
+   i = i + 1
+end
+  return message
+end
+
  function filter_list(msg)
 local hash = "gp_lang:"..msg.chat_id_
 local lang = redis:get(hash)
@@ -658,40 +666,4 @@ else
              i = i + 1
          end
      return filterlist
-end
-
-function whitelist(chat_id)
-local hash = "gp_lang:"..chat_id
-local lang = redis:get(hash)
-    local data = load_data(_config.moderation.data)
-    local i = 1
-  if not data[tostring(chat_id)] then
-  if not lang then
-    return '_Group is not added_'
-else
-    return 'گروه به لیست گروه های مدیریتی ربات اضافه نشده است'
    end
-  end
-  if not data[tostring(chat_id)]['whitelist'] then
-    data[tostring(chat_id)]['whitelist'] = {}
-    save_data(_config.moderation.data, data)
-    end
-  -- determine if table is empty
-  if next(data[tostring(chat_id)]['whitelist']) == nil then --fix way
-     if not lang then
-					return "_No_ *users* _in white list_"
-   else
-					return "*هیچ کاربری در لیست سفید وجود ندارد*"
-              end
-				end
-       if not lang then
-   message = '*Users of white list :*\n'
-         else
-   message = '_کاربران لیست سفید :_\n'
-     end
-  for k,v in pairs(data[tostring(chat_id)]['whitelist']) do
-    message = message ..i.. '- '..v..' [' ..k.. '] \n'
-   i = i + 1
-end
-  return message
-end
