@@ -15,7 +15,7 @@ end
 if not lang then
    return '》 *gяøυρ łš αlяeαđч αđđeđ* ‼️\n*〰〰〰〰〰〰〰〰*\n🗯_The robot is already in the group, the robot was is no longer need to do not_'
 else
-return '》 _ربات در_ #لیست _گروه ربات از قبل بود_ ‼️\n*〰〰〰〰〰〰〰〰*\n🗯ربات از قبل در لیست گروه های ربات بود است دیگر نیازی به این‌کار نیست.'
+return '》 _ربات در_ #لیست _گروه ربات از قبل بود_ ‼️\n*〰〰〰〰〰〰〰〰*\n⚔️از قبل آماده پشتیبانی از مردم این قلمرو بود گلادیتور عرفان⚔️.'
   end
 end
         -- create data array in moderation.json
@@ -76,7 +76,7 @@ end
     if not lang then
   return '》 *gяøυρ  ħαš вeeи αđđeđ* 💠\n*〰〰〰〰〰〰〰〰*\n🗯_Group now to list the groups the robot was added_'
 else
-  return '》 _گروه به_ #لیست _گروه ربات اضافه شده_ 💠\n*〰〰〰〰〰〰〰〰*\n🗯گروه هم اکنون به لیست گروه ربات اضافه شد.'
+  return '》 _☠️I am GOD of war and ready☠️_ 💠\n*〰〰〰〰〰〰〰〰*\n⚔️ آماده پشتیبانی از مردم این قلمرو هستم  گلادیاتور عرفان⚔️.'
 end
 end
 
@@ -97,7 +97,7 @@ local lang = redis:get(hash)
   if not lang then
     return '》 *gяøυρ łš иøт αđđeđ* 🚫\n*〰〰〰〰〰〰〰〰*\n🗯_Group from the first to the group list, the robot was not added_'
 else
-    return '》 _گروه در_ #لیست _گروه ربات  نیست_ 🚫\n*〰〰〰〰〰〰〰〰*\n🗯گروه از اول به لیست گروه ربات اضافه نشده بود.'
+    return '》 _please ready me to kill them all_ 🚫\n*〰〰〰〰〰〰〰〰*\nاین قلمرو را تصرف نکرده ایم🔱.'
    end
   end
 
@@ -419,7 +419,7 @@ if administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] then
     if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "》 👤_υšeя _ : "..user_name.." *"..data.id.."* _łš αlяeαđч gяøυρ øωиeя_⚠️", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر"..user_name.." *"..data.id_.."* *از قبل مدیر بود*⚠️", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر"..user_name.." *"..data.id_.."* *امپراطور بود*⚠️", 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = user_name
@@ -427,7 +427,7 @@ administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = user_name
    if not lang then
   return tdcli.sendMessage(arg.chat_id, "", 0, "》👤_υšeя_ "..user_name.." *"..data.id_.."* _łи иøω тħe_ *gяøυρ øωиeя* ✔️", 0, "md")
    else
-  return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *مدیر گروه شد*✔️", 0, "md")
+  return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *امپراطور شد*✔️", 0, "md")
    end
 end
 tdcli_function ({
@@ -449,7 +449,7 @@ if administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "》👤_υšeя_ "..user_name.." *"..data.id_.."* _łš αlяeαđч_ *мøđeяαтøя*⚠️", 0, "md")
 else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از قبل معاون گروه بود*⚠️", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *گلادیتاور بود*⚠️", 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = user_name
@@ -457,7 +457,7 @@ administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = user_name
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "》👤_υšeя_ "..user_name.." *"..data.id_.."* _łи иøω тħe_ *gяøυρ ρяøмøтe*✔️", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *معاون گروه شد*✔️", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *گلادیاتور شد*✔️", 0, "md")
    end
 end
 tdcli_function ({
@@ -479,7 +479,7 @@ if not administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] then
    if not lang then
 return tdcli.sendMessage(arg.chat_id, "", 0, "》👤_υšeя_ "..user_name.." *"..data.id_.."* _łи иøт α_ *gяøυρ øωиeя*❌", 0, "md")
    else
-return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از قبل مدیر نبود*❌", 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از قبل امپراطور نبود*❌", 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = nil
@@ -487,7 +487,7 @@ administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = nil
    if not lang then
 return tdcli.sendMessage(arg.chat_id, "", 0, "》👤_υšeя_ "..user_name.." *"..data.id_.."* _łš đeмøтe øf_ *gяøυρ øωиeя*✔️", 0, "md")
     else
-return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از مقام مدیر برکنار شد*✔️", 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از مقام امپراطوری برکنار شد*✔️", 0, "md")
    end
 end
 tdcli_function ({
@@ -507,7 +507,7 @@ if not administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
     if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "》👤_υšeя_ "..user_name.." *"..data.id_.."* _łи иøт α_ *мøđeяαтøя*❗️", 0, "md")
     else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از قبل معاون نبود*❗️", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از قبل گلادیاتور نبود*❗️", 0, "md")
    end
   end
 administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = nil
@@ -515,7 +515,7 @@ administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = nil
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "》👤_υšeя_ "..user_name.." *"..data.id_.."* _ħαš вeeи_ *đeмøтeđ*✔️", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از مقام معاون گروه برکنار شد*✔️", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از مقام گلادیاتوری برکنار شد*✔️", 0, "md")
    end
 end
 tdcli_function ({
@@ -621,7 +621,7 @@ if administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] then
     if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "》 _υšeя _ 👤: "..user_name.."\n łđ : *"..data.id.."* _łš αlяeαđч gяøυρ øωиeя-⚠️", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر"..user_name.." *"..data.id_.."* *از قبل مدیر بود*⚠️", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر"..user_name.." *"..data.id_.."* *امپراطور بود*⚠️", 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = user_name
@@ -629,14 +629,14 @@ administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = user_name
    if not lang then
   return tdcli.sendMessage(arg.chat_id, "", 0, "》👤_υšeя_ "..user_name.." *"..data.id_.."* _łи иøω тħe_ *gяøυρ øωиeя* ✔️", 0, "md")
    else
-  return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *مدیر گروه شد*✔️", 0, "md")   end
+  return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *امپراطور شد*✔️", 0, "md")   end
 end
   if cmd == "promote" then
 if administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "》👤_υšeя_ "..user_name.." *"..data.id_.."* _łš αlяeαđч_ *мøđeяαтøя*⚠️", 0, "md")
 else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از قبل معاون گروه بود*⚠️", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *گلادیتاور بود*⚠️", 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = user_name
@@ -644,7 +644,7 @@ administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = user_name
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "》👤_υšeя_ "..user_name.." *"..data.id_.."* _нαѕ вєєη_ *ρяσмσтє∂*✔️", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *معاون گروه شد*✔️", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *گلادیاتور شد*✔️", 0, "md")
    end
 end
    if cmd == "remowner" then
@@ -652,7 +652,7 @@ if not administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] then
    if not lang then
 return tdcli.sendMessage(arg.chat_id, "", 0, "》👤_υšeя_ "..user_name.." *"..data.id_.."* _ιѕ ησт α_ *gяøυρ øωиeя*❌", 0, "md")
    else
-return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از قبل مدیر نبود*❌", 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از قبل امپراطور نبود*❌", 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = nil
@@ -660,7 +660,7 @@ administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = nil
    if not lang then
 return tdcli.sendMessage(arg.chat_id, "", 0, "》👤_υšeя_ "..user_name.." *"..data.id_.."* _łš đeмøтe øf_ *gяøυρ øωиeя*✔️", 0, "md")
     else
-return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از مقام مدیر برکنار شد*✔️", 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از مقام امپراطوری برکنار شد*✔️", 0, "md")
    end
 end
    if cmd == "demote" then
@@ -668,7 +668,7 @@ if not administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
     if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "》👤_υšeя_ "..user_name.." *"..data.id_.."* _łи иøт α_ *мøđeяαтøя*❗️", 0, "md")
     else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از قبل معاون نبود*❗️", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از قبل گلادیاتور نبود*❗️", 0, "md")
    end
   end
 administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = nil
@@ -676,7 +676,7 @@ administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = nil
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "》👤_υšeя_ "..user_name.." *"..data.id_.."* _ħαš вeeи_ *đeмøтeđ*✔️", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از مقام معاون گروه برکنار شد*✔️", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از مقام گلادیاتوری برکنار شد*✔️", 0, "md")
    end
 end
    if cmd == "id" then
@@ -784,7 +784,7 @@ end
     if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "》 _υšeя _ 👤: "..user_name.."\n łđ : *"..data.id.."* _łš αlяeαđч gяøυρ øωиeя-⚠️", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر"..user_name.." *"..data.id_.."* *از قبل مدیر بود*⚠️", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر"..user_name.." *"..data.id_.."* *امپراطور بود*⚠️", 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = user_name
@@ -792,7 +792,7 @@ administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = user_name
    if not lang then
   return tdcli.sendMessage(arg.chat_id, "", 0, "》👤_υšeя_ "..user_name.." *"..data.id_.."* _łи иøω тħe_ *gяøυρ øωиeя* ✔️", 0, "md")
    else
-  return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *مدیر گروه شد*✔️", 0, "md")   end
+  return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *امپراطور شد*✔️", 0, "md")   end
    end
 end
   if cmd == "promote" then
@@ -800,7 +800,7 @@ if administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "》👤_υšeя_ "..user_name.." *"..data.id_.."* _łš αlяeαđч_ *мøđeяαтøя*⚠️", 0, "md")
 else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از قبل معاون گروه بود*⚠️", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *گلادیتاور بود*⚠️", 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = user_name
@@ -808,7 +808,7 @@ administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = user_name
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "》👤_υšeя_ "..user_name.." *"..data.id_.."* _нαѕ вєєη_ *ρяσмσтє∂*✔️", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *معاون گروه شد*✔️", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *گلادیاتور شد*✔️", 0, "md")
    end
 end
    if cmd == "remowner" then
@@ -816,7 +816,7 @@ if not administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] then
    if not lang then
 return tdcli.sendMessage(arg.chat_id, "", 0, "》👤_υšeя_ "..user_name.." *"..data.id_.."* _ιѕ ησт α_ *gяøυρ øωиeя*❌", 0, "md")
    else
-return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از قبل مدیر نبود*❌", 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *امپراطور نبود*❌", 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = nil
@@ -824,7 +824,7 @@ administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = nil
    if not lang then
 return tdcli.sendMessage(arg.chat_id, "", 0, "》👤_υšeя_ "..user_name.." *"..data.id_.."* _łš đeмøтe øf_ *gяøυρ øωиeя*✔️", 0, "md")
     else
-return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از مقام مدیر برکنار شد*✔️", 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از مقام امپراطوری برکنار شد*✔️", 0, "md")
    end
 end
    if cmd == "demote" then
@@ -832,7 +832,7 @@ if not administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
     if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "》👤_υšeя_ "..user_name.." *"..data.id_.."* _łи иøт α_ *мøđeяαтøя*❗️", 0, "md")
     else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از قبل معاون نبود*❗️", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *گلادیاتور نبود*❗️", 0, "md")
    end
   end
 administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = nil
@@ -840,7 +840,7 @@ administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = nil
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "》👤_υšeя_ "..user_name.." *"..data.id_.."* _ħαš вeeи_ *đeмøтeđ*✔️", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از مقام معاون گروه برکنار شد*✔️", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "》👤کاربر "..user_name.." *"..data.id_.."* *از مقام گلادیاتوری برکنار شد*✔️", 0, "md")
    end
 end
     if cmd == "whois" then
@@ -885,7 +885,7 @@ if lock_link == "yes" then
 if not lang then
  return "》*#lø¢κ* _ρøšт łš αlяeαđч lø¢κeđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 elseif lang then
- return "》ارسال #لینک در گروه  از قبلا ممنوع است🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "》⚔️ ارسال لینک در قلمرو ممنوع بود⚔️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else
 data[tostring(target)]["settings"]["lock_link"] = "yes"
@@ -893,7 +893,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "》*#lø¢κ* _ρøšтłиg ħαš вeeи lø¢κeđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 else
- return "》ارسال #لینک در گروه ممنوع شد🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "》⚔ارسال لینک در قلمرو ممنوع شد⚔\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -914,14 +914,14 @@ local lock_link = data[tostring(target)]["settings"]["lock_link"]
 if not lang then
 return "》*#lø¢κ* _ρøšтłиg łš иøт lø¢κeđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 elseif lang then
-return "》ارسال #لینک در گروه  از قبلا ممنوع نیست🔓\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "》⚜ارسال لینک در قلمرو ممنوع نمیباشد⚜\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else 
 data[tostring(target)]["settings"]["lock_link"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "》*#lø¢κ* _ρøšтłиg ħαš вeeи υиlø¢κeđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 else
-return "》ارسال #لینک در گروه  ازاد شد🔓\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "》❗️ارسال لینک درقلمرو آزاد شد❗️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -1001,7 +1001,7 @@ if lock_username == "yes" then
 if not lang then
  return "》*#υšeяиαмe* _ρøšт łš αlяeαđч lø¢κeđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 elseif lang then
- return "》ارسال #یوزرنیم در گروه  از قبلا ممنوع است🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "》🔱 ارسال #یوزرنیم در قلمرو  ممنوع بود 🔱\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else
  data[tostring(target)]["settings"]["lock_username"] = "yes"
@@ -1009,7 +1009,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "》*#υšeяиαмe* _ρøšтłиg ħαš вeeи lø¢κeđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 else
- return "》ارسال #یوزرنیم در گروه ممنوع شد🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "》⚜️ ارسال #یوزرنیم در قلمرو ممنوع شد ⚜️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -1030,14 +1030,14 @@ local lock_username = data[tostring(target)]["settings"]["lock_username"]
 if not lang then
 return "》*#υšeяиαмe* _ρøšтłиg łš иøт lø¢κeđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 elseif lang then
-return "》ارسال #یوزرنیم در گروه  از قبلا ممنوع نیست🔓\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "》🔆 ارسال #یوزرنیم در قلمرو ممنوع نبود 🔆\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else 
 data[tostring(target)]["settings"]["lock_username"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "》*#υšeяиαмe* _ρøšтłиg ħαš вeeи υиlø¢κeđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 else
-return "》ارسال #یوزرنیم در گروه  ازاد شد🔓\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "》⚠️ ارسال #یوزرنیم در قلمرو  ازاد شد ⚠️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -1058,7 +1058,7 @@ if lock_hashtags == "yes" then
 if not lang then
  return "》*#ħαšħтαg* _ρøšт łš αlяeαđч lø¢κeđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 elseif lang then
- return "》ارسال #هشتگ و یوزرنیم در گروه  از قبلا ممنوع است🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "》🔱 ارسال #هشتگ و یوزرنیم در قلمرو  ممنوع بود 🔱\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else
  data[tostring(target)]["settings"]["lock_hashtags"] = "yes"
@@ -1066,7 +1066,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "》*#ħαšħтαg* _ρøšтłиg ħαš вeeи lø¢κeđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 else
- return "》ارسال #هشتگ در گروه ممنوع شد🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "》⚜️ ارسال #هشتگ و یوزرنیم در قلمرو ممنوع شد ⚜️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -1087,14 +1087,14 @@ local lock_hashtags = data[tostring(target)]["settings"]["lock_hashtags"]
 if not lang then
 return "》*#ħαšħтαg* _ρøšтłиg łš иøт lø¢κeđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"  
 elseif lang then
-return "》ارسال #هشتگ در گروه  از قبلا ممنوع نیست🔓\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "》🔆 ارسال #هشتگ و یوزرنیم در قلمرو ممنوع نبود 🔆\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else 
 data[tostring(target)]["settings"]["lock_hashtags"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "》*#ħαšħтαg* _ρøšтłиg ħαš вeeи υиlø¢κeđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 else
-return "》ارسال #هشتگ درگروه آزاد شد🔓\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "》⚠️ ارسال #هشتگ و یوزرنیم در قلمرو  ازاد شد ⚠️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -1115,7 +1115,7 @@ if lock_views == "yes" then
 if not lang then
  return "#νłeωš _ρøšт łš αlяeαđч lø¢κeđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 elseif lang then
- return "ارسال #پست ویو دار در گروه هم اکنون ممنوع است🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "🔱 ارسال #پست ویو دار در قلمرو  ممنوع بود 🔱\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else
  data[tostring(target)]["settings"]["views"] = "yes"
@@ -1123,7 +1123,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "#νłeωš _ρøšтłиg ħαš вeeи lø¢κeđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 else
- return "ارسال #پست ویو دار در گروه ممنوع شد🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "⚜️ ارسال #پست ویو دار در قلمرو ممنوع شد ⚜️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -1144,14 +1144,14 @@ local lock_views = data[tostring(target)]["settings"]["views"]
 if not lang then
 return "#νłeωš _ρøšтłиg łš иøт lø¢κeđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 elseif lang then
-return "ارسال #پست ویو دار در گروه ممنوع نمیباشد🔓\n*〰〰〰〰〰〰〰〰*\n🗯ارسال ویو از قبل ممنوع نبود و پست های داری ویو پاک نمیشدند.\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "🔆 ارسال #پست ویو دار در قلمرو ممنوع نبود 🔆\n*〰〰〰〰〰〰〰〰*\n🗯ارسال ویو از قبل ممنوع نبود و پست های داری ویو پاک نمیشدند.\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else 
 data[tostring(target)]["settings"]["views"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "#νłeωš _ρøšтłиg ħαš вeeи υиlø¢κeđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 else
-return "ارسال #پست ویو دار در گروه آزاد شد🔓\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "⚠️ ارسال #پست ویودار در قلمرو  ازاد شد ⚠️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -1286,7 +1286,7 @@ if lock_ads == "yes" then
 if not lang then
  return "*#αđš* _ρøšт łš αlяeαđч lø¢κeđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 elseif lang then
- return "ارسال #تبلیغات در گروه از قبل ممنوع است🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "🔱 ارسال #تبلیغات در قلمرو  ممنوع بود 🔱\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else
  data[tostring(target)]["settings"]["ads"] = "yes"
@@ -1294,7 +1294,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "*@αđš* _ρøšтłиg ħαš вeeи lø¢κeđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 else
- return "ارسال #تبلیغات در گروه ممنوع شد\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "⚜️ ارسال #تبلیغات در قلمرو ممنوع شد ⚜️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -1315,14 +1315,14 @@ local lock_ads = data[tostring(target)]["settings"]["ads"]
 if not lang then
 return "*#αđš* _ρøšтłиg łš иøт lø¢κeđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"  
 elseif lang then
-return "ارسال #تبلیغات در گروه ممنوع نمیباشد🔓\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "🔆 ارسال #تبلیغات در قلمرو ممنوع نبود 🔆\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else 
 data[tostring(target)]["settings"]["ads"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "*#αđš* _ρøšтłиg ħαš вeeи υиlø¢κeđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 else
-return "ارسال #تبلیغات در گروه آزاد شد🔓\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "⚠️ ارسال #تبلیغات در قلمرو  ازاد شد ⚠️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -1343,7 +1343,7 @@ if lock_fosh == "yes" then
 if not lang then
  return "#føšħ _ρøšт łš αlяeαđч lø¢κeđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 elseif lang then
- return "ارسال #کلمات رکیک در گروه هم اکنون ممنوع است🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "🔱 ارسال #کلمات رکیک در قلمرو  ممنوع بود 🔱\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else
  data[tostring(target)]["settings"]["fosh"] = "yes"
@@ -1351,7 +1351,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "#føšħ _ρøšтłиg ħαš вeeи lø¢κeđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 else
- return "ارسال #کلمات رکیک در گروه ممنوع شد🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "⚜️ ارسال #کلمات رکیک در قلمرو ممنوع شد ⚜️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -1372,14 +1372,14 @@ local lock_fosh = data[tostring(target)]["settings"]["fosh"]
 if not lang then
 return "#føšħ _ρøšтłиg łš иøт lø¢κeđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 elseif lang then
-return "ارسال #کلمات رکیک در گروه ممنوع نمیباشد🔓\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "🔆 ارسال #کلمات رکیک در قلمرو ممنوع نبود 🔆\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else 
 data[tostring(target)]["settings"]["fosh"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "#føšħ _ρøšтłиg ħαš вeeи υиlø¢κeđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 else
-return "ارسال #کلمات رکیک در گروه آزاد شد🔓\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "⚠️ ارسال #کلمات رکیک در قلمرو  ازاد شد ⚠️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -1400,7 +1400,7 @@ if lock_mention == "yes" then
 if not lang then
  return "*#мeитłøи* _ρøšт łš αlяeαđч lø¢κeđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 elseif lang then
- return "ارسال #فراخوانی در گروه  از قبلا ممنوع است🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "🔱 ارسال #فراخوانی در قلمرو  ممنوع بود 🔱\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else
  data[tostring(target)]["settings"]["lock_mention"] = "yes"
@@ -1408,7 +1408,7 @@ save_data(_config.moderation.data, data)
 if not lang then 
  return "*#мeитłøи* _ρøšтłиg ħαš вeeи lø¢κeđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 else 
- return "ارسال #فراخوانی در گروه ممنوع شد🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "⚜️ ارسال #فراخوانی در قلمرو ممنوع شد ⚜️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -1429,14 +1429,14 @@ local lock_mention = data[tostring(target)]["settings"]["lock_mention"]
 if not lang then
 return "*#мeитłøи* _ρøšтłиg łš иøт lø¢κeđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"  
 elseif lang then
-return "ارسال #فراخوانی در گروه  از قبلا ممنوع نیست🔓\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "🔆 ارسال #فراخوانی در قلمرو ممنوع نبود 🔆\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else 
 data[tostring(target)]["settings"]["lock_mention"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "*#мeитłøи* _ρøšтłиg ħαš вeeи υиlø¢κeđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 else
-return "ارسال #فراخوانی در گروه  ازاد شد🔓\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "⚠️ ارسال #فراخوانی در قلمرو  ازاد شد ⚠️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -1572,7 +1572,7 @@ if lock_spam == "yes" then
 if not lang then
  return "*#šραм* _ρøšт łš αlяeαđч lø¢κeđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 elseif lang then
- return "ارسال #هرزنامه ( اسپم) در گروه  از قبلا ممنوع است🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "🔱 ارسال #اسپم در قلمرو  ممنوع بود 🔱\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else
  data[tostring(target)]["settings"]["lock_spam"] = "yes"
@@ -1580,7 +1580,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "*#šραм* _ρøšтłиg ħαš вeeи lø¢κeđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 else
- return "ارسال #هرزنامه ( اسپم) در گروه ممنوع شد🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "⚜️ ارسال #اسپم در قلمرو ممنوع شد ⚜️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -1601,7 +1601,7 @@ local lock_spam = data[tostring(target)]["settings"]["lock_spam"]
 if not lang then
 return "*#šραм* _ρøšтłиg łš иøт lø¢κeđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"  
 elseif lang then
- return "ارسال #هرزنامه (اسپم) در گروه  از قبلا ممنوع نیست🔓\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "🔆 ارسال #اسپم در قلمرو ممنوع نبود 🔆\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else 
 data[tostring(target)]["settings"]["lock_spam"] = "no" 
@@ -1609,7 +1609,7 @@ save_data(_config.moderation.data, data)
 if not lang then 
 return "*#šραм* _ρøšтłиg ħαš вeeи υиlø¢κeđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 else
- return "ارسال #هرزنامه (اسپم) در گروه  ازاد شد🔓\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "⚠️ ارسال #اسپم در قلمرو  ازاد شد ⚠️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -1630,7 +1630,7 @@ if lock_flood == "yes" then
 if not lang then
  return "*#fløøđłиg* _ρøšт łš αlяeαđч lø¢κeđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 elseif lang then
- return "ارسال #پیام مکرر در گروه  از قبلا ممنوع است🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "🔱 ارسال #پیام مکرر در قلمرو  ممنوع بود 🔱\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else
  data[tostring(target)]["settings"]["flood"] = "yes"
@@ -1638,7 +1638,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "*#fløøđłиg* _ρøšтłиg ħαš вeeи lø¢κeđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 else
- return "ارسال # پیام مکرر در گروه ممنوع شد🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "⚜️ ارسال #پیام مکرر در قلمرو ممنوع شد ⚜️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -1659,14 +1659,14 @@ local lock_flood = data[tostring(target)]["settings"]["flood"]
 if not lang then
 return "*#fløøđłиg* _ρøšтłиg łš иøт lø¢κeđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 elseif lang then
-return "ارسال #پیام مکرر در گروه  از قبلا ممنوع نیست🔓\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "🔆 ارسال #پیام مکرر در قلمرو ممنوع نبود 🔆\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else 
 data[tostring(target)]["settings"]["flood"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "*#fløøđłиg*  _ρøšтłиg ħαš вeeи υиlø¢κeđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 else
-return "ارسال #پیام مکرر در گروه  ازاد شد🔓\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "⚠️ ارسال #پیام مکرر در قلمرو  ازاد شد ⚠️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -1687,7 +1687,7 @@ if lock_bots == "yes" then
 if not lang then
  return "*#вøт* _ρяøтe¢тłøи łš αlяeαđч eиαвleđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 elseif lang then
- return "#محافظت از گروه در برابر ربات ها از قبل فعال است🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "#محافظت ☠️ از قلمرو در برابر ربات های مخرب از قبل فعال است☠️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else
  data[tostring(target)]["settings"]["lock_bots"] = "yes"
@@ -1695,7 +1695,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "*#вøт* _ρяøтe¢тłøи øи ħαš вeeи eиαвleđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 else
- return "#محافظت از گروه در برابر ربات ها  فعال شد🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "محافظت ☠️از قلمرو در برابر ربات های مخرب  فعال شد☠️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -1716,14 +1716,14 @@ local lock_bots = data[tostring(target)]["settings"]["lock_bots"]
 if not lang then
 return "*#вøт* _ρяøтe¢тłøи łš иøт đłšαвleđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 elseif lang then
-return "محافظت از گروه در برابر ربات ها غیر فعال است\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "#محافظت ❌از قلمرو در برابر ربات های مخرب غیر فعال است❌\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else 
 data[tostring(target)]["settings"]["lock_bots"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "*#вøт* _ρяøтe¢тłøи ħαš вeeи đłšαвleđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 else
-return "#محافظت از گروه در برابر ربات ها  ازاد است🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "#محافظت ❌از قلمرو در برابر ربات های مخرب آزاد است❌\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -1744,7 +1744,7 @@ if lock_markdown == "yes" then
 if not lang then 
  return "*#мαяκđøωи* _ρøšт łš αlяeαđч lø¢κeđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 elseif lang then
- return "ارسال #پیام دارای فونت در گروه  از قبلا ممنوع است🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "🔱 ارسال #پیام دارای فونت در قلمرو  ممنوع بود 🔱\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else
  data[tostring(target)]["settings"]["lock_markdown"] = "yes"
@@ -1752,7 +1752,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "*#мαяκđøωи* _ρøšтłиg ħαš вeeи lø¢κeđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 else
- return "ارسال #پیام دارای فونت در گروه ممنوع شد🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "⚜️ ارسال #پیام دارای فونت در قلمرو ممنوع شد ⚜️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -1773,14 +1773,14 @@ local lock_markdown = data[tostring(target)]["settings"]["lock_markdown"]
 if not lang then
 return "*#мαяκđøωи* _ρøšтłиg łš иøт lø¢κeđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 elseif lang then
-return "ارسال #پیام دارای فونت در گروه  از قبلا ممنوع نیست🔓\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "🔆 ارسال #پیام دارای فونت در قلمرو ممنوع نبود 🔆\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else 
 data[tostring(target)]["settings"]["lock_markdown"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "*#мαяκđøωи* _ρøšтłиg ħαš вeeи υиlø¢κeđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 else
-return "ارسال #پیام درای فونت در گروه  ازاد شد🔓\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "⚠️ ارسال #پیام دارای فونت در قلمرو  ازاد شد ⚠️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -1801,7 +1801,7 @@ if lock_webpage == "yes" then
 if not lang then
  return "*#ωel¢øмe* _ρøšт łš αlяeαđч lø¢κeđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 elseif lang then
- return "ارسال #صفحات وب در گروه  از قبلا ممنوع است🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "🔱 ارسال #وبسایت در قلمرو  ممنوع بود 🔱\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else
  data[tostring(target)]["settings"]["lock_webpage"] = "yes"
@@ -1809,7 +1809,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "*#ωel¢øмe* _ρøšтłиg ħαš вeeи lø¢κeđ_🔒\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 else
- return "ارسال #صفحات وب در گروه ممنوع شد🔒\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "⚜️ ارسال #وبسایت در قلمرو ممنوع شد ⚜️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -1830,7 +1830,7 @@ local lock_webpage = data[tostring(target)]["settings"]["lock_webpage"]
 if not lang then
 return "*#ωel¢øмe* _ρøšтłиg łš иøт lø¢κeđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 elseif lang then
-return "ارسال #صفحات وب در گروه  از قبل ممنوع نیست🔓\n*〰〰〰〰〰〰〰〰*\n🗯سفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "🔆 ارسال #وبسایت در قلمرو ممنوع نبود 🔆\n*〰〰〰〰〰〰〰〰*\n🗯سفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else 
 data[tostring(target)]["settings"]["lock_webpage"] = "no"
@@ -1838,7 +1838,7 @@ save_data(_config.moderation.data, data)
 if not lang then
 return "*#ωel¢øмe* _ρøšтłиg ħαš вeeи υиlø¢κeđ_🔓\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 else
-return "ارسال #صفحات وب در گروه  ازاد شد🔓\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "⚠️ ارسال #وبسایت در قلمرو  ازاد شد ⚠️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -1976,7 +1976,7 @@ if mute_gif == "yes" then
 if not lang then
  return "*#мυтe głf* _łš αlяeαđч eиαвleđ_🔇\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 elseif lang then
- return "بیصدا کردن #تصاویر متحرک  از قبل فعال است🔇\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "⚔️ ممنوعیت ارسال #تصاویر متحرک  فعال بود ⚔️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else
  data[tostring(target)]["settings"]["mute_gif"] = "yes" 
@@ -1984,7 +1984,7 @@ save_data(_config.moderation.data, data)
 if not lang then 
  return "*#мυтe głf* _ħαš вeeи eиαвleđ_🔇\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 else
- return "بیصدا کردن #تصاویر متحرک فعال شد🔇\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "✔️ ممنوعیت ارسال #تصاویر متحرک  فعال شد ✔️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -2005,7 +2005,7 @@ local mute_gif = data[tostring(target)]["settings"]["mute_gif"]
 if not lang then
 return "*#мυтe głf* _łš иøт đłšαвleđ_🔊\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 elseif lang then
-return "بیصدا کردن #تصاویر متحرک فعال نیست🔊\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "🔘 ممنوعیت ارسال #تصاویر متحرک  فعال نیست 🔘\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else 
 data[tostring(target)]["settings"]["mute_gif"] = "no"
@@ -2013,7 +2013,7 @@ data[tostring(target)]["settings"]["mute_gif"] = "no"
 if not lang then
 return "*#мυтe głf* _ħαš вeeи đłšαвleđ_🔊\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 else
-return "بیصدا کردن # تصاویر متحرک غیر فعال شد🔊\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "❗️ ممنوعیت ارسال #تصاویر متحرک  آزاد شد ❗️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -2092,7 +2092,7 @@ if mute_inline == "yes" then
 if not lang then
  return "*#мυтe łиlłиe* _łš αlяeαđч eиαвleđ_🔇\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 elseif lang then
- return "بیصدا کردن #کیبورد شیشه ای از قبل فعال است🔊\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "⚔️ ممنوعیت ارسال #کیبورد شیشه ای  فعال بود ⚔️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else
  data[tostring(target)]["settings"]["mute_inline"] = "yes" 
@@ -2100,7 +2100,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "*#мυтe łиlłиe* _ħαš вeeи eиαвleđ_🔇\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 else
- return "بیصدا کردن #کیبورد شیشه ای فعال شد🔇\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "✔️ ممنوعیت ارسال #کیبورد شیشه ای  فعال شد ✔️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -2121,7 +2121,7 @@ local mute_inline = data[tostring(target)]["settings"]["mute_inline"]
 if not lang then
 return "*#мυтe łиlłиe* _łš иøт đłšαвleđ_🔊\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 elseif lang then
-return "بیصدا کردن #کیبورد شیشه ای فعال نیست🔊\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "🔘 ممنوعیت ارسال #کیبورد شیشه ای  فعال نیست 🔘\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else 
 data[tostring(target)]["settings"]["mute_inline"] = "no"
@@ -2129,7 +2129,7 @@ data[tostring(target)]["settings"]["mute_inline"] = "no"
 if not lang then
 return "*#мυтe łиlłиe* _ħαš вeeи đłšαвleđ_🔊\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 else
-return "بیصدا کردن #کیبورد شیشه ای  غیر فعال شد🔊\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "❗️ ممنوعیت ارسال #کیبورد شیشه ای  آزاد شد ❗️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -2208,7 +2208,7 @@ if mute_photo == "yes" then
 if not lang then
  return "*#мυтe ρħøтø* _łš αlяeαđч eиαвleđ_🔇\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 elseif lang then
- return "بیصدا کردن #عکس  از قبل فعال است🔇\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "⚔️ ممنوعیت ارسال #عکس  فعال بود ⚔️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else
  data[tostring(target)]["settings"]["mute_photo"] = "yes" 
@@ -2216,7 +2216,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "*#мυтe ρħøтø* _ħαš вeeи eиαвleđ_🔇\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 else
- return "بیصدا کردن #عکس فعال شد🔇\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "✔️ ممنوعیت ارسال #عکس  فعال شد ✔️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -2237,7 +2237,7 @@ local mute_photo = data[tostring(target)]["settings"]["mute_photo"]
 if not lang then
 return "*#мυтe ρħøтø* _łš иøт đłšαвleđ_🔊\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 elseif lang then
-return "بیصدا کردن #عکس فعال نیست🔊\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "🔘 ممنوعیت ارسال #عکس فعال نیست 🔘\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else 
 data[tostring(target)]["settings"]["mute_photo"] = "no"
@@ -2245,7 +2245,7 @@ data[tostring(target)]["settings"]["mute_photo"] = "no"
 if not lang then
 return "*#мυтe ρħøтø* _ħαš вeeи đłšαвleđ_🔊\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 else
-return "بیصدا کردن # عکس غیر فعال شد🔊\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "❗️ ممنوعیت ارسال #عکس آزاد شد ❗️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -2266,7 +2266,7 @@ if mute_video == "yes" then
 if not lang then
  return "*#мυтe νłđeø* _łš αlяeαđч eиαвleđ_🔇\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 elseif lang then
- return "بیصدا کردن #ویدیو  از قبل فعال است🔇\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "⚔️ ممنوعیت ارسال #ویدیو فعال بود ⚔️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else
  data[tostring(target)]["settings"]["mute_video"] = "yes" 
@@ -2274,7 +2274,7 @@ save_data(_config.moderation.data, data)
 if not lang then 
  return "*#мυтe νłđeø* _ħαš вeeи eиαвleđ_🔇\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 else
- return "بیصدا کردن #ویدیو فعال شد🔇\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "✔️ ممنوعیت ارسال #ویدیو فعال شد ✔️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -2295,7 +2295,7 @@ local mute_video = data[tostring(target)]["settings"]["mute_video"]
 if not lang then
 return "*#мυтe νłđeø* _łš иøт đłšαвleđ_🔊\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 elseif lang then
-return "بیصدا کردن #ویدیو فعال نیست🔊\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "🔘 ممنوعیت ارسال #ویدیو فعال نیست 🔘\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else 
 data[tostring(target)]["settings"]["mute_video"] = "no"
@@ -2303,7 +2303,7 @@ data[tostring(target)]["settings"]["mute_video"] = "no"
 if not lang then
 return "*#мυтe νłđeø* _ħαš вeeи đłšαвleđ_🔊\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 else
-return "بیصدا کردن #ویدیو غیر فعال شد🔊\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "❗️ ممنوعیت ارسال #ویدیو  آزاد شد ❗️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -2324,7 +2324,7 @@ if mute_audio == "yes" then
 if not lang then
  return "*#мυтe αυđłø* _łš αlяeαđч eиαвleđ_🔇\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 elseif lang then
- return "بیصدا کردن #اهنگ  از قبل فعال است🔇\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "⚔️ ممنوعیت ارسال #آهنگ فعال بود ⚔️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else
  data[tostring(target)]["settings"]["mute_audio"] = "yes" 
@@ -2332,7 +2332,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "*#мυтe αυđłø* _ħαš вeeи eиαвleđ_🔇\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 else 
-return "بیصدا کردن #اهنگ فعال شد🔇\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "✔️ ممنوعیت ارسال #آهنگ فعال شد ✔️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -2353,7 +2353,7 @@ local mute_audio = data[tostring(target)]["settings"]["mute_audio"]
 if not lang then
 return "*#мυтe αυđłø* _łš иøт đłšαвleđ_🔊\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 elseif lang then
-return "بیصدا کردن #اهنگ فعال نیست🔊\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "🔘 ممنوعیت ارسال #آهنگ فعال نیست 🔘\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else 
 data[tostring(target)]["settings"]["mute_audio"] = "no"
@@ -2361,7 +2361,7 @@ data[tostring(target)]["settings"]["mute_audio"] = "no"
 if not lang then 
 return "*#мυтe αυđłø* _ħαš вeeи đłšαвleđ_🔊\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 else
-return "بیصدا کردن #اهنگ غیر فعال شد🔊\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
+return "❗️ ممنوعیت ارسال #آهنگ آزاد شد ❗️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 end
 end
 end
@@ -2382,7 +2382,7 @@ if mute_voice == "yes" then
 if not lang then
  return "*#мυтe νøł¢e* _łš αlяeαđч eиαвleđ_🔇\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 elseif lang then
- return "بیصدا کردن #صدا (وویس)  از قبل فعال است🔇\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "⚔️ ممنوعیت ارسال #ویس فعال بود ⚔️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else
  data[tostring(target)]["settings"]["mute_voice"] = "yes" 
@@ -2390,7 +2390,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "*#мυтe νøł¢e* _ħαš вeeи eиαвleđ_🔇\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 else
- return "بیصدا کردن #صدا (وویس)  فعال شد🔇\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "✔️ ممنوعیت ارسال #ویس فعال شد ✔️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -2411,7 +2411,7 @@ local mute_voice = data[tostring(target)]["settings"]["mute_voice"]
 if not lang then
 return "*#мυтe νøł¢e* _łš иøт đłšαвleđ_🔊\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 elseif lang then
-return "بیصدا کردن #صدا (وویس) فعال نیست🔊\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "🔘 ممنوعیت ارسال #ویس فعال نیست 🔘\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else 
 data[tostring(target)]["settings"]["mute_voice"] = "no"
@@ -2419,7 +2419,7 @@ data[tostring(target)]["settings"]["mute_voice"] = "no"
 if not lang then 
 return "*#мυтe νøł¢e* _ħαš вeeи đłšαвleđ_🔊\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 else
-return "بیصدا کردن #صدا (وویس) غیر فعال شد🔊\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "❗️ ممنوعیت ارسال #ویس آزاد شد ❗️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -2440,7 +2440,7 @@ if mute_sticker == "yes" then
 if not lang then
  return "*#мυтe šтł¢κeя* _łš αlяeαđч eиαвleđ_🔇\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 elseif lang then
- return "بیصدا کردن #استیکر  از قبل فعال است🔇\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "⚔️ ممنوعیت ارسال #استیکر فعال بود ⚔️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else
  data[tostring(target)]["settings"]["mute_sticker"] = "yes" 
@@ -2448,7 +2448,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "*#мυтe šтł¢κeя* _ħαš вeeи eиαвleđ_🔇\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 else
- return "بیصدا کردن #استیکر فعال شد🔇\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "✔️ ممنوعیت ارسال #استیکر فعال شد ✔️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -2469,7 +2469,7 @@ local mute_sticker = data[tostring(target)]["settings"]["mute_sticker"]
 if not lang then
 return "*#мυтe šтł¢κeя* _łš иøт đłšαвleđ_🔊\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 elseif lang then
-return "بیصدا کردن #استیکر فعال نیست🔊\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "🔘 ممنوعیت ارسال #استیکر فعال نیست 🔘\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else 
 data[tostring(target)]["settings"]["mute_sticker"] = "no"
@@ -2477,7 +2477,7 @@ data[tostring(target)]["settings"]["mute_sticker"] = "no"
 if not lang then 
 return "*#мυтe šтł¢κeя* _ħαš вeeи đłšαвleđ_🔊\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 else
-return "بیصدا کردن #استیکر غیر فعال شد🔊\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "❗️ ممنوعیت ارسال #استیکر آزاد شد ❗️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end 
 end
 end
@@ -2556,7 +2556,7 @@ if mute_forward == "yes" then
 if not lang then
  return "*#мυтe føяωαяđ* _łš αlяeαđч eиαвleđ_🔇\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 elseif lang then
- return "بیصدا کردن #فوروارد از قبل فعال است🔇\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "⚔️ ممنوعیت ارسال #فوروارد فعال بود ⚔️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 else
  data[tostring(target)]["settings"]["mute_forward"] = "yes" 
@@ -2564,7 +2564,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "*#мυтe føяωαяđ* _ħαš вeeи eиαвleđ_🔇\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 else
- return "بیصدا کردن #فوروارد فعال شد🔇\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+ return "✔️ ممنوعیت ارسال #فوروارد فعال شد ✔️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -2585,7 +2585,7 @@ local mute_forward = data[tostring(target)]["settings"]["mute_forward"]
 if not lang then
 return "*#мυтe føяωαяđ* _łš иøт đłšαвleđ_🔊\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 elseif lang then
-return "بیصدا کردن #فوروارد فعال نیست🔊\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "🔘 ممنوعیت ارسال #فوروارد فعال نیست 🔘\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end 
 else 
 data[tostring(target)]["settings"]["mute_forward"] = "no"
@@ -2593,7 +2593,7 @@ data[tostring(target)]["settings"]["mute_forward"] = "no"
 if not lang then 
 return "*#мυтe føяωαяđ* _ħαš вeeи đłšαвleđ_🔊\n*〰〰〰〰〰〰〰〰*\n*øяđeявч*: [@"..check_markdown(msg.from.username or "Erfaan051").."]" 
 else
-return "بیصدا کردن #فوروارد غیر فعال شد🔊\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
+return "❗️ ممنوعیت ارسال #فوروارد آزاد شد ❗️\n*〰〰〰〰〰〰〰〰*\nسفارش توسط : [@"..check_markdown(msg.from.username or "Erfaan051").."]"
 end
 end
 end
@@ -4748,34 +4748,35 @@ end
 
 if matches[1] == "nerkh" or matches[1] == "Nerkh" or matches[1] == "نرخ" then
 text = [[
-`💵 نرخ فروش گروه با ربات`
-*🔖яα∂ιкαℓвσт тɢ 💤*
+`☠️ نرخ فروش ربات های کینگ و کویین ☠️`
+*king and queen*
 
-✳️_برای گروه های 0 تا 500 نفر ‌_
-`➰1 ماهه  5 هزار تومان`
-`➰3 ماهه 12 هزار تومان`
-
-*〰〰〰〰〰〰〰*
-✳️_برای گروه های 500 تا 1000 نفر _
-`➰1 ماهه  6 هزار تومان`
-`➰3 ماهه  14 هزار تومان`
+تعرفه های ربات :
+_ماهـــیانـــہ یک‌ ربات⭐️7 تومان_
+‌_ماهـــیانـــہ دو ربات⭐️⭐️12 تومان_
+_ماهـــیانـــہ سه ربات⭐️⭐️⭐️17 تومان_
+_ماهـــیانـــہ چهار ربات⭐️⭐️⭐️⭐️22 تومان_
 
 *〰〰〰〰〰〰〰*
-✳️_برای گروه های 1000 تا 3000 نفر ماهانه_ 
-`➰1 ماهه  8 هزار تومان `
-`➰3 ماهه  20 هزار تومان`
+_دائــــمـــی یک‌‌ ربات 🌟20 تومن_
+_دائــــمـــی دو‌‌ ربات 🌟🌟37 تومن_
+دائــــمـــی سه‌‌ ربات🌟🌟🌟55 تومن
+_دائــــمـــی چهار‌‌ ربات🌟🌟🌟🌟70 تومن_
 
 *〰〰〰〰〰〰〰*
-✳️_برای گروه های 3000 تا 5000  نفر ماهانه_ 
-`➰1 ماهه  10 هزار تومان `
-`➰3 ماهه  25  هزار تومان`
+_ربات دیلیت مسیج در کنار انتی اسپم:ماهانه:5 و دائم:17_
+
+_ربات تک دیلیت مسیج :25_
+
+*〰〰〰〰〰〰〰*
+`
 
 *〰〰〰〰〰〰〰*
 1⃣._توجه داشته باشید به هیچ وجه نباید ربات رو از گروه حذف کنید و در صورت داشتن هرگونه مشکل فقط اون رو از ادمینی گروه بردارید و به بنده مراجعه کنید._
 
-2⃣._لازم به ذکره اولویت بصورت پرداخت کارت به کارت میباشد._
+2⃣._◾️پرداخت فقط از طریق کارت به کارت◾️._
 
-3⃣._ربات داعمی نداریم به علت کیفیت و کارای بالای ربات._
+3⃣._🔱داعم به منظور 6 ماهست.و پس از آن تمدید سرور🔱._
 *________________*
 *برای خرید به ایدی زیر مراجعه کنید :*
 🆔: @Erfaan051
@@ -4787,7 +4788,7 @@ end
 
 if matches[1] == "ping" or matches[1] == "Ping" or matches[1] == "انلاینی" then
 text = [[
-اره انـلاینم و حـواسم بـہ گـروه هسـت
+🔱آسوده باش پادشاه نظاره گر است🔱
 ]]
 return text
 end
@@ -4795,7 +4796,7 @@ end
 if matches[1] == "mutetimehelp" or matches[1] == "Mutetimehelp" or matches[1] == "راهنمای بیصدازمانی" then
 if not lang then
 text = [[
-̶M̶α̶Ƭ̶α̶Ɗ̶σ̶R̶ ̶M̶υ̶т̶є̶т̶ι̶м̶є̶ ̶Ƈ̶σ̶м̶м̶α̶η̶ɗ̶ѕ:
+king & queen B O T:
 
 *⚡️тo ѕee тнe coммαɴdѕ oғ yoυr deѕιred ιтeм ѕυвмιт*
 
@@ -5176,8 +5177,6 @@ patterns ={
 "^(حذف ادمین گروه)$",
 "^[!#/]([Dd]el) (%d*)$",
 "^([Dd]el) (%d*)$",
-"^[!#/]([Rr]msg) (%d*)$",
-"^([Rr]msg) (%d*)$",
 "^(حذف) (%d*)$",
 },
 run=run,
